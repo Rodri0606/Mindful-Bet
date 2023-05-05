@@ -1,0 +1,332 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 300ms ease;
+    scroll-behavior: smooth;
+}
+
+header{
+
+    height: 100px;
+    width: 100%;
+    background-color:#365737 ;
+    padding: 0px 0px;
+
+}
+
+.Menu{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+    justify-content: space-between;
+}
+
+nav > ul{
+    display: flex;
+    height: 100%;
+}
+
+nav ul li{
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+nav> ul> li:first-child> a{
+    background-image: url(Logo2.png) ;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 50px;
+}
+nav> ul> li:first-child> a:hover{
+    background-image: url(Logo2.png) ;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+
+nav >ul> li> a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center ;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: all 300ms ease;
+}
+
+nav >ul >li >a:hover{
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav >ul >li:last-child> a{
+   color: red;
+}
+
+nav> ul> li:last-child> a:hover{
+    transform: scale(1);
+    background-color: #365737 ;
+    box-shadow: none;
+    color: red;
+}
+
+nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top:70 ;
+}
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color:black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+
+}
+
+nav ul li ul li a:hover{
+    background: #365737;
+    color:white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#Nosotros{
+    padding: 20px 40px;
+    background-color: rgb(57, 57, 57);
+    background-size: 100%;
+    color:rgb(255, 255, 255);
+    display: block;
+    align-items:end;
+    justify-content: right;
+    text-align:center;
+}
+#Nosotros > h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+
+}
+
+#Sobre-nosotros{
+    
+    text-align: center;
+    padding-right: 10px;
+    background-image: url(Charlas2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+   
+}
+#Sobre-nosotros h2{
+    margin-left: 40%;
+}
+#Sobre-nosotros p{
+    margin-left: 40%;
+}
+#Que{
+    text-align: center;
+    padding-left: 10px;
+    background-image: url(Charlas2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#Que h2{
+    margin-right: 40%;
+}
+#Que p{
+    margin-right: 40%;
+}
+
+#Como{  
+    text-align: center;
+    padding-right: 10px;
+    background-image: url(Poker3\ \(2\).jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+#Como h2{
+    margin-left: 40%;
+}
+#Como p{
+    margin-left: 40%;
+}
+#Nosotros h2{
+    font-size: 2.5em;
+    text-decoration:wavy underline  ;
+    padding: 20px;
+    
+}
+#Nosotros p{
+    font-size:1.5em;
+    padding: 15px;
+}
+
+
+#Permisos{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#Permisos h1{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#Permisos h2{
+   font-size: 3em;
+   font-weight: bold;
+}
+
+#Permisos h3{
+    font-size: 2.5em;
+}
+#Permisos .cartas{
+    display: flex;
+    justify-content: center;
+}
+#Permisos p{
+    display: block;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 1.75em;
+}
+
+#Permisos .carta{
+    padding: 10px 20px;
+}
+.catas:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Poker3\ \(2\).jpg");
+    background-position:center center;
+    background-size:cover;
+
+}
+
+.catas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Charlas2.png");
+    background-position:center center;
+    background-size:cover;
+
+}
+
+.catas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Niños.jpg");
+    background-position:center center;
+    background-size:cover;
+
+}
+
+
+#MVV{
+    background-color: white;
+    color: black;
+}
+#MVV h1{
+    font-size: 2.5em;
+}
+#MVV p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#caracteristicas{
+    padding: 200px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Contacto li{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.25em;
+    
+}
+ 
+
+
+footer{
+    background-color: grey;
+    display: flex;
+    height: 50px;
+    align-items: flex-end;
+    justify-content: right;
+}
+footer p{
+    font-size: 0.5em;
+    text-align: right;
+    display: flex;
+}
+
+
